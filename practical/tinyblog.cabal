@@ -1,0 +1,27 @@
+name:                   tinyblog
+version:                0.0.1
+synopsis:               A teensy blog in Scotty
+homepage:               https://github.com/bdrillard/eecs-776
+license:                MIT
+author:                 Aleksander Eskilson
+maintainer:             aeskilson@ku.edu
+category:               Web
+build-type:             Simple
+cabal-version:          >= 1.20.0
+
+executable              tinyblog
+    main-is:            Main.hs
+    build-depends:      base ==4.6.*
+                    ,   wai
+                    ,   warp
+                    ,   http-types
+                    ,   scotty
+                    ,   text
+                    ,   bytestring
+                    ,   lucid
+                    ,   transformers
+                    ,   wai-middleware-static
+                    ,   wai-extra
+                    ,   HDBC
+                    ,   HDBC-sqlite3
+                    ,   time
